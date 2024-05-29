@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System.Data;
+using Farmer_s_Hub.Data.Enum;
 
 namespace Farmer_s_Hub.Models
 {
@@ -36,10 +37,4 @@ namespace Farmer_s_Hub.Models
         public ICollection<Product> Products { get; set; }
     }
 
-    public enum UserStatus
-    {
-        Submitted,
-        Approved,
-        Rejected
-    }
 }
